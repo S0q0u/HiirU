@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #ffdde3;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+p strong {
+  color: #d64d63;
+  font-size: large;
+}
+
+#tips p,
+#faq p {
+  text-align: justify;
+}
+
+* h2 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 35;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+  max-height: 30%;
+}
+
+header.navbar-container {
+  padding-block: 1rem;
+  margin-inline: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9999;
+  background-color: #ffdde3;
+  position: sticky;
+  top: 0;
+}
+
+header.navbar-container .logo img {
+  width: 250px;
+}
+
+header.navbar-container .nav-list ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #d64d63;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Outfit;
+}
+
+#Introduction {
+  display: flex;
+}
+
+#Introduction p {
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.funfact img {
+  width: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .featured-image {
+    width: 100%;
+  }
+
+  .card p {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.funfact header {
+  display: flex;
+  align-items: center;
+}
+
+.funfact img {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.funfact h3 {
+  margin: 0 20px;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: auto;
+  object-fit: contain;
+}
+
+.card p {
+  margin: 20px;
+}
+
+blockquote {
+  text-align: center;
+}
+
+blockquote::before,
+blockquote::after {
+  content: '"';
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #d64d63;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav.media ul {
+  list-style: none;
+}
+
+nav.media ul li a {
+  text-decoration: none;
+  color: #d64d63;
+  display: flex;
+  align-items: center;
+}
+
+nav.media ul li a p {
+  margin-top: -1rem;
+  padding-left: 2rem;
+  color: black;
+}
